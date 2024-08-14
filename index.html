@@ -7,9 +7,35 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    
+  <div class="header">
+    <h1>The Odin Library</h1>
+    <button class="AddBook">Add New Book</button>
+    <dialog id="modal" class="modal">
+        <form method="dialog">
+            <section>
+                <label for="author-name">Author Name</label>
+                <input type="text" id="author-name" name="author-name" required>
+                <br>
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="book-name" required>
+                <br>
+                <label for="number-of-pages">Number of Pages:</label>
+                <input type="number" id="number-of-pages" name="number-of-pages" required>  
+                <br>
+                <label for="read">Is Read</label>
+                <input type="radio" id="read" name="read" value="read" checked>  
+                <br>
+                <label for="not-read">Is Not Read</label>
+                <input type="radio" id="not-read" name="read" value="not-read">  
+                <br>
+                <button type="button" class="add-book-dialog">Add</button>
+                <button type="button" class="cancel-dialog" onclick="document.querySelector('dialog').close();">Cancel</button>
+            </section>
+        </form>
+    </dialog>
+  </div>
+  <div class="books" id="books"></div>
 
-
-    <script src="javascript.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>

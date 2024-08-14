@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.books {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: 1fr 1fr;
+    background-color: azure;
+}
+
+.Book {
+    background-color: rgb(201, 168, 168);
+    margin: 10px;
+    padding: 10px;
+}
